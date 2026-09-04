@@ -3,76 +3,309 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Neighbr: Services from people next door</title>
-  <meta name="description" content="Neighbr is the neighborhood marketplace: buy, sell, book services, and find local events from the people around you.">
+  <title>Neighbr: buy, sell, and book with the people next door</title>
+  <meta name="description" content="Neighbr is the neighborhood marketplace. Buy and sell nearby, book a neighbor for the job, find homemade food and local events. Now on the App Store.">
+  <link rel="canonical" href="https://neighbronline.com/">
+  <meta name="theme-color" content="#131a30">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Neighbr">
+  <meta property="og:title" content="Neighbr: buy, sell, and book with the people next door">
+  <meta property="og:description" content="The neighborhood marketplace. Buy and sell nearby, book a neighbor for the job, find homemade food and local events. Now on the App Store.">
+  <meta property="og:url" content="https://neighbronline.com/">
+  <meta property="og:image" content="https://neighbronline.com/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Neighbr: your neighborhood, in one app. A phone showing the Neighbr home feed.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Neighbr: buy, sell, and book with the people next door">
+  <meta name="twitter:description" content="The neighborhood marketplace. Buy and sell nearby, book a neighbor for the job, find homemade food and local events. Now on the App Store.">
+  <meta name="twitter:image" content="https://neighbronline.com/assets/og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23232d4e'/%3E%3Cpath d='M50 13 C32.5 13 20 26.2 20 43.5 C20 64 50 87 50 87 C50 87 80 64 80 43.5 C80 26.2 67.5 13 50 13 Z' fill='%23ff8a65'/%3E%3Cpath d='M41 56 V31 L59 56 V31' fill='none' stroke='%23232d4e' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="inner">
-      <a class="brand" href="index.html">
-        <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+    <div class="container inner">
+      <a class="brand" href="index.html" aria-label="Neighbr home">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
           <rect width="100" height="100" rx="22" fill="#232d4e"/>
           <path d="M50 13 C32.5 13 20 26.2 20 43.5 C20 64 50 87 50 87 C50 87 80 64 80 43.5 C80 26.2 67.5 13 50 13 Z" fill="#ff8a65"/>
           <path d="M41 56 V31 L59 56 V31" fill="none" stroke="#232d4e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span>neighbr</span>
       </a>
-      <nav>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="guidelines.html">Guidelines</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how">How it works</a>
+        <a href="pro.html">Pro</a>
         <a href="mailto:lukzha4321@gmail.com">Support</a>
       </nav>
+      <div class="header-cta">
+        <a class="btn btn-primary dark btn-sm" href="https://apps.apple.com/us/app/id6793326395">Get the app</a>
+        <details class="menu">
+          <summary>
+            <svg class="icon icon-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg>
+            <span class="visually-hidden">Menu</span>
+          </summary>
+          <nav class="menu-panel" aria-label="Site">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#how">How it works</a>
+            <a href="pro.html">Neighbr Pro</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="guidelines.html">Community Guidelines</a>
+            <a href="mailto:lukzha4321@gmail.com">Support</a>
+          </nav>
+        </details>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="logo">
-      <svg width="96" height="96" viewBox="0 0 100 100" aria-hidden="true">
-        <rect width="100" height="100" rx="22" fill="#232d4e"/>
-        <path d="M50 13 C32.5 13 20 26.2 20 43.5 C20 64 50 87 50 87 C50 87 80 64 80 43.5 C80 26.2 67.5 13 50 13 Z" fill="#ff8a65"/>
-        <path d="M41 56 V31 L59 56 V31" fill="none" stroke="#232d4e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <h1>Your neighborhood,<br>in <em>one app</em>.</h1>
-    <p class="lede">Buy and sell with the people around you, book a neighbor for the job,
-    find the block party, and see who's out and about.</p>
-    <a class="badge-download" href="https://apps.apple.com/us/app/id6793326395">Download on the App&nbsp;Store</a>
-  </section>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero on-dark" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Now on the App Store</p>
+          <h1 id="hero-title">Your neighborhood, in <em>one app</em>.</h1>
+          <p class="lede">Buy and sell with the people around you, book a neighbor for the job, pick up something homemade, and find out what is happening on your block.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://apps.apple.com/us/app/id6793326395">
+              Get Neighbr on the App Store
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+          <p class="hero-note">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Free to download. Sign in with Apple in a few seconds.
+          </p>
+          <ul class="hero-tags" aria-label="What you can find on Neighbr">
+            <li>Services</li><li>Homemade food</li><li>Secondhand finds</li><li>Local events</li><li>Neighbors map</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="phone-stack">
+            <div class="phone phone-back">
+              <img src="assets/04-more-listings.jpg" width="460" height="1000" alt="" loading="lazy">
+            </div>
+            <div class="phone phone-main">
+              <img src="assets/01-home.jpg" width="460" height="1000" alt="The Neighbr home feed showing nearby listings for sourdough bread and a tee shirt, each 1.4 miles away" fetchpriority="high">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="features">
-    <div class="feature">
-      <div class="glyph">🏷</div>
-      <h3>Buy &amp; sell nearby</h3>
-      <p>Services, homemade food, and secondhand finds from real neighbors. Browse what's around you, or explore the whole map.</p>
-    </div>
-    <div class="feature">
-      <div class="glyph">📅</div>
-      <h3>Neighborhood events</h3>
-      <p>Garage sales, park cleanups, birthday parties. Post one in seconds, see who's interested, and message your guest list.</p>
-    </div>
-    <div class="feature">
-      <div class="glyph">🗺</div>
-      <h3>The Neighbors map</h3>
-      <p>A live, privacy-first map of neighbors using the app near you, with approximate locations only, and going invisible is one switch.</p>
-    </div>
-    <div class="feature">
-      <div class="glyph">🔒</div>
-      <h3>Safe by design</h3>
-      <p>Payments held securely until the job's done, in-app messaging with contact protection, and block &amp; report tools everywhere.</p>
-    </div>
-  </section>
+    <!-- Features -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">What you can do</p>
+          <h2 id="features-title">Everything your block has to offer</h2>
+          <p>One feed for the whole neighborhood: the person who bakes, the kid who mows, the couch that needs a new home, and the party on Saturday.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></div>
+            <h3>Buy and sell nearby</h3>
+            <p>Services, homemade food, and secondhand finds from real neighbors. Browse what's around you, or explore the whole map.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <h3>Book a neighbor for the job</h3>
+            <p>Lawn care, car detailing, tutoring, a hand moving furniture. Pick a time slot, pay in the app, and the money is released when the job is done.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></div>
+            <h3>Homemade food</h3>
+            <p>Sourdough, tamales, birthday cakes, weeknight dinners. Order from the neighbor who cooks, and pick it up down the street.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></div>
+            <h3>Neighborhood events</h3>
+            <p>Garage sales, park cleanups, birthday parties. Post one in seconds, see who's interested, and message your guest list.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <h3>The Neighbors map</h3>
+            <p>A live, privacy-first map of neighbors using the app near you, with approximate locations only, and going invisible is one switch.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Safe by design</h3>
+            <p>Payments held securely until the job's done, in-app messaging with contact protection, and block &amp; report tools everywhere.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase -->
+    <section class="section showcase" aria-labelledby="showcase-title">
+      <div class="container">
+        <h2 id="showcase-title" class="visually-hidden">A closer look at the app</h2>
+
+        <div class="show-row">
+          <div class="show-copy">
+            <p class="eyebrow">Buying</p>
+            <h3>From the feed to your door in two taps</h3>
+            <p>Every listing shows the price, the distance, and the seller's profile and reviews. Tap Buy, pay inside the app, and sort out pickup in chat.</p>
+            <ul>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Distance and seller profile on every listing</span></li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Reviews from past buyers</span></li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Message the seller without sharing your number</span></li>
+            </ul>
+          </div>
+          <div class="show-shot">
+            <div class="phone">
+              <img src="assets/02-detail.jpg" width="460" height="1000" alt="A listing detail screen for baked to order sourdough bread, $10.00, 1.4 miles away, with a Buy button" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="show-row flip">
+          <div class="show-copy">
+            <p class="eyebrow">Selling</p>
+            <h3>Post a listing in under a minute</h3>
+            <p>Pick what you are selling, add a photo and a price, and it is live for the people around you. Services get weekly hours so neighbors can book a slot.</p>
+            <ul>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Services, food, and products in one flow</span></li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Payouts straight to your bank through Stripe</span></li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Boost a listing when you want more eyes on it</span></li>
+            </ul>
+          </div>
+          <div class="show-shot">
+            <div class="phone">
+              <img src="assets/03-post.jpg" width="460" height="1000" alt="The New Listing screen asking what you are selling, with Service, Food, and Product options" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Up and running in three steps</h2>
+          <p>No forms, no waiting list. You can be browsing your block before your coffee cools.</p>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Download and sign in</h3>
+            <p>Get Neighbr from the App Store and sign in with Apple. Add a name and a photo so neighbors know who they are dealing with.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Set your neighborhood</h3>
+            <p>Share your location or enter a ZIP code. Your feed fills with what is close, and your own posts show an approximate location only.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Buy, book, or post</h3>
+            <p>Grab something from the feed, book a time with a neighbor, or list what you have. Chat and payment stay inside the app.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Pro band -->
+    <section class="section pro-band on-dark" aria-labelledby="pro-title">
+      <div class="container inner">
+        <div>
+          <p class="eyebrow">Neighbr Pro</p>
+          <h2 id="pro-title">Sell more, keep more</h2>
+          <p>Pro drops the selling fee from 10% to 6% on everything you sell. It is $8.99 a month, cancels any time, and pays for itself on a couple of hundred dollars of sales.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="pro.html">
+              Learn about Pro
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="fee-compare" aria-label="Selling fee comparison">
+          <div class="fee">
+            <div class="label">Standard</div>
+            <div class="num">10%</div>
+            <div class="sub">selling fee</div>
+          </div>
+          <div class="fee pro">
+            <div class="label">With Pro</div>
+            <div class="num">6%</div>
+            <div class="sub">selling fee, $8.99 / month</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="section cta-band on-dark" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">Meet the neighborhood you already live in</h2>
+        <p>Neighbr is free on the App Store. Download it, sign in with Apple, and see what is a short walk away.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://apps.apple.com/us/app/id6793326395">
+            Get Neighbr on the App Store
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+          </a>
+        </div>
+        <p class="fine">Free download. Requires an iPhone.</p>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
-    <p>
-      <a href="privacy.html">Privacy Policy</a> ·
-      <a href="terms.html">Terms of Service</a> ·
-      <a href="guidelines.html">Community Guidelines</a> ·
-      <a href="mailto:lukzha4321@gmail.com">Contact</a>
-    </p>
-    <p>© 2026 Neighbr. All rights reserved.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Neighbr home">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <rect width="100" height="100" rx="22" fill="#232d4e"/>
+              <path d="M50 13 C32.5 13 20 26.2 20 43.5 C20 64 50 87 50 87 C50 87 80 64 80 43.5 C80 26.2 67.5 13 50 13 Z" fill="#ff8a65"/>
+              <path d="M41 56 V31 L59 56 V31" fill="none" stroke="#232d4e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>neighbr</span>
+          </a>
+          <p>The neighborhood marketplace. Buy, sell, book, and gather with the people around you.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#how">How it works</a></li>
+            <li><a href="pro.html">Neighbr Pro</a></li>
+            <li><a href="https://apps.apple.com/us/app/id6793326395">Download on the App Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="guidelines.html">Community Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="mailto:lukzha4321@gmail.com">Contact support</a></li>
+            <li><a href="mailto:lukzha4321@gmail.com">Report a problem</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Neighbr. All rights reserved.</span>
+        <span>Made for neighbors, by a neighbor.</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

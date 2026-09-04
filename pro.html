@@ -3,96 +3,221 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Neighbr Pro: lower fees on everything you sell</title>
-  <meta name="description" content="Neighbr Pro lowers your selling fee from 10% to 6%. Subscribe on the web for $8.99 a month.">
+  <title>Neighbr Pro: a 6% selling fee instead of 10%</title>
+  <meta name="description" content="Neighbr Pro lowers your selling fee from 10% to 6% on services, food, and products. $8.99 a month on the web, cancel any time.">
+  <link rel="canonical" href="https://neighbronline.com/pro.html">
+  <meta name="theme-color" content="#131a30">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Neighbr">
+  <meta property="og:title" content="Neighbr Pro: a 6% selling fee instead of 10%">
+  <meta property="og:description" content="Keep more of every sale. Neighbr Pro is $8.99 a month on the web and cancels any time.">
+  <meta property="og:url" content="https://neighbronline.com/pro.html">
+  <meta property="og:image" content="https://neighbronline.com/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Neighbr: your neighborhood, in one app. A phone showing the Neighbr home feed.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Neighbr Pro: a 6% selling fee instead of 10%">
+  <meta name="twitter:description" content="Keep more of every sale. Neighbr Pro is $8.99 a month on the web and cancels any time.">
+  <meta name="twitter:image" content="https://neighbronline.com/assets/og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23232d4e'/%3E%3Cpath d='M50 13 C32.5 13 20 26.2 20 43.5 C20 64 50 87 50 87 C50 87 80 64 80 43.5 C80 26.2 67.5 13 50 13 Z' fill='%23ff8a65'/%3E%3Cpath d='M41 56 V31 L59 56 V31' fill='none' stroke='%23232d4e' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <style>
-    .pro-wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
-    .price-card {
-      background: #fff; border: 1px solid var(--hairline); border-radius: 18px;
-      padding: 28px; text-align: center; margin: 28px 0;
-      box-shadow: 0 10px 30px rgba(19, 26, 48, .06);
+    /* Page-specific: the price card straddles the hero and the paper below it. */
+    .pro-main { padding-bottom: var(--section); }
+    .pro-block { max-width: 720px; margin: clamp(48px, 7vw, 80px) auto 0; }
+    .pro-block h2 { font-size: 1.5rem; margin-bottom: 18px; }
+    .example {
+      display: grid; gap: 12px; grid-template-columns: 1fr;
+      background: var(--white); border: 1px solid var(--hairline); border-radius: var(--radius); padding: 20px;
     }
-    .price { font-size: 44px; font-weight: 700; color: var(--ink); line-height: 1.1; }
-    .price span { font-size: 17px; font-weight: 500; color: var(--muted); }
-    .price-note { color: var(--muted); font-size: 15px; margin-top: 6px; }
-    .cta {
-      display: inline-block; margin-top: 20px; padding: 14px 30px;
-      background: var(--coral); color: #fff; font-weight: 600; font-size: 17px;
-      border: 0; border-radius: 999px; cursor: pointer; text-decoration: none;
-    }
-    .cta:hover { background: var(--coral-deep); }
-    .cta[disabled] { opacity: .55; cursor: default; }
-    .perks { list-style: none; padding: 0; margin: 28px 0; }
-    .perks li {
-      padding: 14px 0 14px 34px; border-bottom: 1px solid var(--hairline);
-      position: relative;
-    }
-    .perks li:last-child { border-bottom: 0; }
-    .perks li::before {
-      content: "✓"; position: absolute; left: 4px; color: var(--coral); font-weight: 700;
-    }
-    .status { margin-top: 14px; font-size: 15px; min-height: 22px; }
-    .status.error { color: #b3261e; }
-    .fine { color: var(--muted); font-size: 14px; margin-top: 28px; }
+    .example div { text-align: center; }
+    .example .big { font-size: 1.75rem; font-weight: 800; letter-spacing: -0.02em; }
+    .example .lab { font-size: 0.85rem; color: var(--muted); }
+    .example .big.pro { color: var(--success); }
+    @media (min-width: 560px) { .example { grid-template-columns: repeat(3, 1fr); } }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="inner">
-      <a class="brand" href="index.html">
-        <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+    <div class="container inner">
+      <a class="brand" href="index.html" aria-label="Neighbr home">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
           <rect width="100" height="100" rx="22" fill="#232d4e"/>
           <path d="M50 13 C32.5 13 20 26.2 20 43.5 C20 64 50 87 50 87 C50 87 80 64 80 43.5 C80 26.2 67.5 13 50 13 Z" fill="#ff8a65"/>
           <path d="M41 56 V31 L59 56 V31" fill="none" stroke="#232d4e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span>neighbr</span>
       </a>
-      <nav>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="guidelines.html">Guidelines</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how">How it works</a>
+        <a href="pro.html" aria-current="page">Pro</a>
         <a href="mailto:lukzha4321@gmail.com">Support</a>
       </nav>
+      <div class="header-cta">
+        <a class="btn btn-primary dark btn-sm" href="https://apps.apple.com/us/app/id6793326395">Get the app</a>
+        <details class="menu">
+          <summary>
+            <svg class="icon icon-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg>
+            <span class="visually-hidden">Menu</span>
+          </summary>
+          <nav class="menu-panel" aria-label="Site">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#how">How it works</a>
+            <a href="pro.html" aria-current="page">Neighbr Pro</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="guidelines.html">Community Guidelines</a>
+            <a href="mailto:lukzha4321@gmail.com">Support</a>
+          </nav>
+        </details>
+      </div>
     </div>
   </header>
 
-  <main class="pro-wrap">
-    <h1>Neighbr Pro</h1>
-    <p class="lede">Keep more of every sale. Pro drops your selling fee from 10% to 6%,
-      so the more you sell, the more it pays for itself.</p>
+  <main id="main" class="pro-main">
+    <section class="pro-hero" aria-labelledby="pro-title">
+      <div class="container">
+        <p class="eyebrow">Neighbr Pro</p>
+        <h1 id="pro-title">Keep more of every sale</h1>
+        <p class="lede">Pro drops your selling fee from 10% to 6%, so the more you sell, the more it pays for itself.</p>
+      </div>
+      <div class="pro-hero-bottom" aria-hidden="true"></div>
+    </section>
 
-    <div class="price-card">
-      <div class="price">$8.99 <span>/ month</span></div>
-      <p class="price-note">Cancel any time. Subscribing here costs less than
-        subscribing inside the app.</p>
-      <button id="subscribe" class="cta">Subscribe</button>
-      <p class="status" id="status" role="status" aria-live="polite"></p>
+    <div class="container">
+      <div class="price-card">
+        <div class="plan">Monthly plan</div>
+        <div class="price">$8.99 <span>/ month</span></div>
+        <p class="price-note">Cancel any time. Subscribing here costs less than subscribing inside the app.</p>
+        <button id="subscribe" class="btn btn-primary cta" type="button">Subscribe</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </div>
+
+      <section class="pro-block" aria-labelledby="perks-title">
+        <h2 id="perks-title">What you get</h2>
+        <ul class="perks">
+          <li class="perk">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>6% selling fee instead of 10%.</strong><span>On $500 of sales a month that is $20 back in your pocket.</span></div>
+          </li>
+          <li class="perk">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>Applies to everything.</strong><span>Services, food, and products all use the lower rate.</span></div>
+          </li>
+          <li class="perk">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>Same account.</strong><span>Pro activates on the Neighbr account you subscribe with, on every device.</span></div>
+          </li>
+          <li class="perk">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>No commitment.</strong><span>Cancel whenever, and Pro runs to the end of the period you paid for.</span></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="pro-block" aria-labelledby="math-title">
+        <h2 id="math-title">The math on $500 of sales</h2>
+        <div class="example" role="group" aria-label="Fee comparison on $500 of monthly sales">
+          <div><div class="big">$50</div><div class="lab">fee at 10%</div></div>
+          <div><div class="big pro">$30</div><div class="lab">fee at 6% with Pro</div></div>
+          <div><div class="big">$11.01</div><div class="lab">saved after the $8.99 subscription</div></div>
+        </div>
+        <p class="fine" style="margin-top:12px">Pro breaks even at about $225 of sales a month. Above that, every sale puts more in your pocket.</p>
+      </section>
+
+      <section class="pro-block" aria-labelledby="compare-title">
+        <h2 id="compare-title">Free vs Pro</h2>
+        <div class="compare-wrap">
+          <table class="compare">
+            <thead>
+              <tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Pro</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Selling fee</th><td>10%</td><td class="hl">6%</td></tr>
+              <tr><th scope="row">Listings, bookings, and messaging</th><td>Included</td><td class="hl">Included</td></tr>
+              <tr><th scope="row">Payouts through Stripe</th><td>Included</td><td class="hl">Included</td></tr>
+              <tr><th scope="row">Price</th><td>$0</td><td class="hl">$8.99 / month</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="pro-block faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Common questions</h2>
+        <details>
+          <summary>How do I subscribe from here?</summary>
+          <p>Checkout on this page is tied to your Neighbr account, so it starts from inside the app: open Neighbr, go to Settings, then Neighbr Pro. If you landed here on your own, the button under the price points you back to the app.</p>
+        </details>
+        <details>
+          <summary>I already pay for Pro through the App Store. What now?</summary>
+          <p>Cancel that subscription in your Apple account settings first, so you are not paying twice. Once it ends, subscribe here at the lower price.</p>
+        </details>
+        <details>
+          <summary>How do I cancel?</summary>
+          <p>From Settings, then Neighbr Pro, in the app. Pro stays active until the end of the period you already paid for.</p>
+        </details>
+      </section>
+
+      <p class="fine pro-block">
+        Already subscribed through the App Store? Cancel that subscription in your
+        Apple account settings before subscribing here, so you are not paying twice.
+        Questions: <a href="mailto:lukzha4321@gmail.com">lukzha4321@gmail.com</a>.
+      </p>
     </div>
-
-    <ul class="perks">
-      <li><strong>6% selling fee instead of 10%.</strong> On $500 of sales a month that is $20 back in your pocket.</li>
-      <li><strong>Applies to everything.</strong> Services, food, and products all use the lower rate.</li>
-      <li><strong>Same account.</strong> Pro activates on the Neighbr account you subscribe with, on every device.</li>
-      <li><strong>No commitment.</strong> Cancel whenever, and Pro runs to the end of the period you paid for.</li>
-    </ul>
-
-    <p class="fine">
-      Already subscribed through the App Store? Cancel that subscription in your
-      Apple account settings before subscribing here, so you are not paying twice.
-      Questions: <a href="mailto:lukzha4321@gmail.com">lukzha4321@gmail.com</a>.
-    </p>
   </main>
 
   <footer class="site-footer">
-    <p>
-      <a href="privacy.html">Privacy Policy</a> ·
-      <a href="terms.html">Terms of Service</a> ·
-      <a href="guidelines.html">Community Guidelines</a> ·
-      <a href="mailto:lukzha4321@gmail.com">Contact</a>
-    </p>
-    <p>© 2026 Neighbr. All rights reserved.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Neighbr home">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <rect width="100" height="100" rx="22" fill="#232d4e"/>
+              <path d="M50 13 C32.5 13 20 26.2 20 43.5 C20 64 50 87 50 87 C50 87 80 64 80 43.5 C80 26.2 67.5 13 50 13 Z" fill="#ff8a65"/>
+              <path d="M41 56 V31 L59 56 V31" fill="none" stroke="#232d4e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>neighbr</span>
+          </a>
+          <p>The neighborhood marketplace. Buy, sell, book, and gather with the people around you.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#how">How it works</a></li>
+            <li><a href="pro.html">Neighbr Pro</a></li>
+            <li><a href="https://apps.apple.com/us/app/id6793326395">Download on the App Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="guidelines.html">Community Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="mailto:lukzha4321@gmail.com">Contact support</a></li>
+            <li><a href="mailto:lukzha4321@gmail.com">Report a problem</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Neighbr. All rights reserved.</span>
+        <span>Made for neighbors, by a neighbor.</span>
+      </div>
+    </div>
   </footer>
 
   <script>
